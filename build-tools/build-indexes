@@ -1068,7 +1068,6 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 				'dbl', 'duu', 'dnu', 'illegal', 'unreleased'];
 			if (!ModConfig[modid].customTiers) ModConfig[modid].customTiers = [];
 			if (!ModConfig[modid].customDoublesTiers) ModConfig[modid].customDoublesTiers = [];
-			if (modid === 'm4av6') console.log(modData.FormatsData)
 			for (const speciesid in modData.FormatsData) {
 				if (modData.FormatsData[speciesid] === undefined) {
 					console.log('Warning: ' + speciesid + ' does not have tiering data');
