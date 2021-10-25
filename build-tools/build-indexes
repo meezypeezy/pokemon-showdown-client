@@ -1069,7 +1069,10 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 			if (!ModConfig[modid].customTiers) ModConfig[modid].customTiers = [];
 			if (!ModConfig[modid].customDoublesTiers) ModConfig[modid].customDoublesTiers = [];
 			for (const speciesid in modData.FormatsData) {
-				if (modData.FormatsData[speciesid] === undefined) continue;
+				if (modData.FormatsData[speciesid] === undefined) {
+					console.log('Warning: ' + speciesid + ' does not have tiering data');
+					continue;
+				}
 				const tier = modData.FormatsData[speciesid].tier;
 				const doublesTier = modData.FormatsData[speciesid].doublesTier;
 				if (tier === undefined && doublesTier === undefined) continue;
