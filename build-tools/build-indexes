@@ -1262,6 +1262,7 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 					overrideTypeChart[id] = modEntry;
 				}
 			}
+			// if (modid === 'm4av6') console.log(formats);
 		} catch (err) {
 			delete ModConfig[modid];
 			delete BattleTeambuilderTable[modid];
