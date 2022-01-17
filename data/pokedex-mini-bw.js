@@ -1315,6 +1315,8 @@ exports.BattlePokemonSpritesBW = {
 	duohm:{num:-63},
 	dorsoil:{num:-64},
 	protowatt:{num:-65},
+	venomicon:{num:-66},
+	venomiconepilogue:{num:-66},
 	pokestarsmeargle:{num:-5000},
 	pokestarufo:{num:-5001},
 	pokestarufopropu1:{num:-5001},
