@@ -1232,9 +1232,11 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 					if (!overrideMoveKeys.includes(key)) continue;
 					const modString = JSON.stringify(modEntry[key]);
 					const baseString = JSON.stringify(baseEntry[key]);
+					// if (modid === "cleanslate") console.log(modString);
 					if (modString !== baseString) {
 						if (!overrideMoveInfo[id]) overrideMoveInfo[id] = {};
-						overrideMoveInfo[id][key] = JSON.parse(modString);
+						if (modString === undefined) overrideMoveInfo[id][key] = undefined;
+						else overrideMoveInfo[id][key] = JSON.parse(modString);
 					}
 				}
 			}
