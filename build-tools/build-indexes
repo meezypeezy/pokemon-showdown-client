@@ -1163,7 +1163,8 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 					const baseString = JSON.stringify(baseEntry[key]);
 					if (modString !== baseString) {
 						if (!overrideDexInfo[id]) overrideDexInfo[id] = {};
-						overrideDexInfo[id][key] = JSON.parse(modString);
+						if (modString === undefined) overrideDexInfo[id][key] = undefined;
+						else overrideDexInfo[id][key] = JSON.parse(modString);
 					}
 				}
 			}
