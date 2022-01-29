@@ -34,6 +34,10 @@ const ModConfigData = {
 		smashmodsmelee: {
 			excludeStandardTiers: true,
 		},
+		supersmashroulette: {
+         customTiers: ['SSR'],
+         excludeStandardTiers: true,
+      },
 	},
 };
 exports.ModConfigData = ModConfigData;
