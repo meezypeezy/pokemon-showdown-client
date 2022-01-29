@@ -19,7 +19,7 @@ Config.whitelist = [
 // address bar is `Config.routes.client`.
 Config.defaultserver = {
 	id: 'dragonheaven',
-	host: 'localhost:8000',
+	host: 'https://github.com/meezypeezy/DH',
 	port: 443,
 	httpport: 8000,
 	altport: 80,
