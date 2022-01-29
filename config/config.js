@@ -19,7 +19,7 @@ Config.whitelist = [
 // address bar is `Config.routes.client`.
 Config.defaultserver = {
 	id: 'dragonheaven',
-	host: 'https://super-smash-roulette.herokuapp.com/config/config.js',
+	host: 'https://smash-roulette.herokuapp.com',
 	port: 443,
 	httpport: 8000,
 	altport: 80,
